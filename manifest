@@ -1,0 +1,12 @@
+: 1
+name: ut
+version: 1.1.8
+summary: [Boost::ext].UT / μt
+license: BSL-1.0            ; Boost Software License 1.0
+description-file: README.md
+url: https://github.com/boost-ext/ut
+package-url: https://github.com/kamrann/ut
+email: cjangus@gmail.com
+
+depends: * build2 >= 0.13.0
+depends: * bpkg >= 0.13.0

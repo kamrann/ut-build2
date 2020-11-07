@@ -1,0 +1,3 @@
+[submodule "ut/upstream"]
+	path = ut/upstream
+	url = https://github.com/boost-ext/ut.git

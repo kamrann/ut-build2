@@ -1,0 +1,6 @@
+$out_root/
+{
+  include ut/
+}
+
+export $out_root/ut/$import.target

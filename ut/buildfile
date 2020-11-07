@@ -1,0 +1,31 @@
+lib{ut}: {hxx}{** -version} hxx{version}
+
+# Include the generated version header into the distribution (so that we don't
+# pick up an installed one) and don't remove it when cleaning in src (so that
+# clean results in a state identical to distributed).
+#
+hxx{version}: in{version} $src_root/manifest
+{
+  dist  = true
+  clean = ($src_root != $out_root)
+}
+
+# Build options.
+#
+cxx.poptions =+ "-I$out_base" "-I$src_base/upstream/include"
+
+# Export options.
+#
+lib{ut}:
+{
+  cxx.export.poptions = "-I$out_base" "-I$src_base/upstream/include"
+}
+
+# Install into the boost/ subdirectory of, say, /usr/include/
+# recreating subdirectories.
+#
+{hxx}{*}:
+{
+  install         = include/boost/
+  install.subdirs = true
+}
