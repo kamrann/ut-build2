@@ -1,6 +1,6 @@
 : 1
 name: ut
-version: 1.1.8
+version: 1.1.9-a.1
 summary: [Boost::ext].UT / μt
 license: BSL-1.0            ; Boost Software License 1.0
 description-file: README.md
